@@ -1,0 +1,112 @@
+{
+  "schema_version": "1.0",
+  "project_id": "courtyard-demo",
+  "name": "Original 8 × 6 m courtyard study",
+  "units": "m",
+  "scale": {
+    "status": "measured",
+    "evidence": "Synthetic authored fixture: outside wall reference lines 8.00 x 6.00 m; not a surveyed building"
+  },
+  "storeys": [
+    {
+      "id": "ground",
+      "elevation": 0,
+      "walls": [
+        {
+          "id": "south",
+          "start": [
+            0,
+            0
+          ],
+          "end": [
+            8,
+            0
+          ],
+          "height": 3,
+          "thickness": 0.2,
+          "openings": [
+            {
+              "id": "entry",
+              "kind": "door",
+              "offset": 1,
+              "width": 1,
+              "height": 2.2,
+              "sill": 0
+            },
+            {
+              "id": "view",
+              "kind": "window",
+              "offset": 3.5,
+              "width": 2.5,
+              "height": 1.5,
+              "sill": 0.8
+            }
+          ]
+        },
+        {
+          "id": "east",
+          "start": [
+            8,
+            0
+          ],
+          "end": [
+            8,
+            6
+          ],
+          "height": 3,
+          "thickness": 0.2
+        },
+        {
+          "id": "north",
+          "start": [
+            8,
+            6
+          ],
+          "end": [
+            0,
+            6
+          ],
+          "height": 3,
+          "thickness": 0.2,
+          "openings": [
+            {
+              "id": "garden",
+              "kind": "window",
+              "offset": 2,
+              "width": 3,
+              "height": 2,
+              "sill": 0.5
+            }
+          ]
+        },
+        {
+          "id": "west",
+          "start": [
+            0,
+            6
+          ],
+          "end": [
+            0,
+            0
+          ],
+          "height": 3,
+          "thickness": 0.2
+        }
+      ],
+      "slabs": [
+        {
+          "id": "floor",
+          "origin": [
+            0,
+            0
+          ],
+          "size": [
+            8,
+            6
+          ],
+          "thickness": 0.22
+        }
+      ]
+    }
+  ]
+}

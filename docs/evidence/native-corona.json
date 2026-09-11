@@ -1,0 +1,86 @@
+{
+  "state": "passed",
+  "max_version": "#(26000, 64, 0, 26, 1, 0, 2270, 2024, \".1 Update\")",
+  "checks": [
+    {
+      "name": "preview quality",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "review quality",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "final quality",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "physical roughness mode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "thick glass",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "millimetre displacement conversion",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "plan geometry",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "wall cells closed and mapped",
+      "passed": true,
+      "detail": 27
+    },
+    {
+      "name": "camera FOV transfer",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "camera position transfer",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "camera uses explicit free pose and FOV",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "host camera landmark reprojection",
+      "passed": true,
+      "detail": {
+        "max_error_px": 0.00012334380299966406
+      }
+    },
+    {
+      "name": "LightMix preserves existing element",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "duplicate LightMix blocked",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "native Corona render written",
+      "passed": true,
+      "detail": {
+        "seconds": 6.88
+      }
+    }
+  ],
+  "renderer_class": "Corona"
+}

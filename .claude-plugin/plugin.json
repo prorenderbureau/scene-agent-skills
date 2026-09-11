@@ -1,0 +1,11 @@
+{
+  "name": "scene-agent-skills",
+  "version": "0.1.0",
+  "description": "20 architectural skills, 16 styles, camera fitting, Corona scripts and IFC4 tools.",
+  "author": {
+    "name": "prorenderbureau"
+  },
+  "homepage": "https://github.com/prorenderbureau/scene-agent-skills",
+  "repository": "https://github.com/prorenderbureau/scene-agent-skills",
+  "license": "MIT"
+}

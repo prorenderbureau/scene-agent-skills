@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+  <title id="title">Scene Agent Skills workflow</title>
+  <desc id="desc">Reference evidence moves through scene specification and native tools to verified deliverables.</desc>
+  <rect width="1200" height="320" rx="20" fill="#102226"/>
+  <g font-family="Arial, sans-serif">
+    <text x="42" y="55" fill="#a7d2c3" font-size="15" letter-spacing="3">SCENE AGENT SKILLS</text>
+    <text x="42" y="96" fill="#f3f2eb" font-size="30">Reference → scene → evidence</text>
+    <g fill="#1d3639" stroke="#45635f">
+      <rect x="42" y="135" width="244" height="126" rx="10"/>
+      <rect x="330" y="135" width="244" height="126" rx="10"/>
+      <rect x="618" y="135" width="244" height="126" rx="10"/>
+      <rect x="906" y="135" width="252" height="126" rx="10"/>
+    </g>
+    <g fill="#f3f2eb" font-size="21">
+      <text x="62" y="171">01  Understand</text><text x="350" y="171">02  Specify</text>
+      <text x="638" y="171">03  Build</text><text x="926" y="171">04  Verify</text>
+    </g>
+    <g fill="#adc4be" font-size="16">
+      <text x="62" y="207">Images · plans · scale</text><text x="62" y="234">Evidence and uncertainty</text>
+      <text x="350" y="207">Camera · style · detail</text><text x="350" y="234">Geometry stays explicit</text>
+      <text x="638" y="207">Corona · IFC · host tools</text><text x="638" y="234">Editable where requested</text>
+      <text x="926" y="207">Render · audit · reopen</text><text x="926" y="234">Measured deliverables</text>
+    </g>
+    <g fill="#d9bd88" font-size="26"><text x="297" y="206">→</text><text x="585" y="206">→</text><text x="873" y="206">→</text></g>
+    <text x="42" y="294" fill="#a7d2c3" font-size="14">20 shared skills  /  16 styles  /  local tools  /  original fixtures  /  MIT</text>
+  </g>
+</svg>

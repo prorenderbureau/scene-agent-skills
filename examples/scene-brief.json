@@ -1,0 +1,34 @@
+{
+  "brief_version": "0.1",
+  "project_id": "courtyard-demo",
+  "deliverable": "editable-3d-and-ifc",
+  "reference_priority": ["authored-plan"],
+  "known_scale": {
+    "status": "measured",
+    "evidence": "Synthetic original fixture: 8 x 6 m reference-line rectangle"
+  },
+  "style_id": "clay-study",
+  "model_quality": "low",
+  "render_quality": "preview",
+  "geometry_locks": ["wall reference lines", "opening offsets and dimensions", "storey elevation"],
+  "observations": [
+    {
+      "id": "south-wall",
+      "source": "courtyard/plan.json",
+      "status": "measured",
+      "decision": "8 m long, 3 m high, 0.2 m thick; door and window openings",
+      "evidence": "Explicit authored dimensions",
+      "verification": "Net IFC volume 3.61 m3 after openings"
+    },
+    {
+      "id": "finish",
+      "source": "example brief",
+      "status": "assumed",
+      "decision": "Neutral clay preview material",
+      "evidence": "No measured finish sample is supplied",
+      "verification": "Do not label clay as a reconstructed final material"
+    }
+  ],
+  "unresolved": ["Production junction cleanup", "Detailed window and door assemblies", "Native Archicad editability"],
+  "execution_boundary": "Example planning record; not an automatic complete-scene compiler contract"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "scene-agent-skills",
+  "owner": {
+    "name": "prorenderbureau"
+  },
+  "plugins": [
+    {
+      "name": "scene-agent-skills",
+      "source": "./",
+      "description": "Architectural scene skills for Claude Code",
+      "version": "0.1.0"
+    }
+  ]
+}

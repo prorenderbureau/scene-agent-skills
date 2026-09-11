@@ -1,0 +1,73 @@
+[
+  {
+    "prompt": "Match the camera to this facade; keep the model intact.",
+    "expected": [
+      "scene-camera-match"
+    ],
+    "avoid": [
+      "scene-style-transfer"
+    ]
+  },
+  {
+    "prompt": "Turn this living-room image into Japandi while preserving all windows.",
+    "expected": [
+      "scene-style-transfer"
+    ],
+    "avoid": [
+      "scene-plan-to-bim"
+    ]
+  },
+  {
+    "prompt": "Build an IFC from this dimensioned floor plan.",
+    "expected": [
+      "scene-plan-to-bim"
+    ],
+    "avoid": [
+      "scene-model-ultra"
+    ]
+  },
+  {
+    "prompt": "My concrete has giant crater-like displacement.",
+    "expected": [
+      "scene-corona-materials"
+    ],
+    "avoid": [
+      "scene-model-ultra"
+    ]
+  },
+  {
+    "prompt": "Make the native scene portable to another workstation.",
+    "expected": [
+      "scene-delivery-package",
+      "scene-asset-pipeline"
+    ],
+    "avoid": [
+      "scene-style-transfer"
+    ]
+  },
+  {
+    "prompt": "Set Corona preview limits in my existing scene.",
+    "expected": [
+      "scene-corona-setup"
+    ],
+    "avoid": [
+      "scene-plan-to-bim"
+    ]
+  },
+  {
+    "prompt": "Review stair/slab clashes and open mesh edges.",
+    "expected": [
+      "scene-topology-audit"
+    ],
+    "avoid": [
+      "scene-render-review"
+    ]
+  },
+  {
+    "prompt": "Write a birthday greeting.",
+    "expected": [],
+    "avoid": [
+      "scene-toolkit"
+    ]
+  }
+]

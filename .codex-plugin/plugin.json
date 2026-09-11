@@ -1,0 +1,18 @@
+{
+  "name": "scene-agent-skills",
+  "version": "0.1.0",
+  "description": "Architectural reconstruction, render styles, camera matching, Corona and plan-to-IFC workflows.",
+  "author": {
+    "name": "prorenderbureau"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Scene Agent Skills",
+    "shortDescription": "Build and review architectural scenes.",
+    "longDescription": "Twenty shared skills with sixteen styles and local tools for plans, IFC4, camera fitting, Corona scripts and asset validation.",
+    "developerName": "prorenderbureau",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": "Use $scene-toolkit to choose an architectural reconstruction workflow and verify the available tools."
+  }
+}

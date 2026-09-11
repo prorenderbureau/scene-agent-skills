@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=70"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scene-agent-skills"
+version = "0.1.0"
+description = "Open architectural scene workflows for Codex and Claude"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{name = "prorenderbureau"}]
+dependencies = ["jsonschema>=4.23,<5", "Pillow>=11,<13"]
+
+[project.optional-dependencies]
+bim = ["ifcopenshell==0.8.5"]
+camera = ["numpy>=1.26,<3", "scipy>=1.13,<2"]
+mcp = ["mcp>=1.12,<2"]
+dev = ["pytest>=8,<10", "PyYAML>=6,<7"]
+
+[project.scripts]
+scene-agent = "scene_agent.cli:main"
+scene-agent-mcp = "scene_agent.server:main"
+
+[tool.setuptools.packages.find]
+where = ["skills/scene-toolkit/scripts"]
+
+[tool.setuptools.package-data]
+scene_agent = ["data/*.json", "templates/*.ms"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
