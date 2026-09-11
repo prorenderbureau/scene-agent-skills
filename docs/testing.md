@@ -10,7 +10,7 @@ python -m pip wheel . --no-deps --wheel-dir dist
 
 Tests cover valid/invalid plans, independent wall volume after IFC openings, IFC EXPRESS validation, SI units, hierarchy, stable wall IDs, elevated storey placement, synthetic camera recovery, held-out landmark failures, false image extensions, package hashes/collisions, path confinement, actual MCP handshake/tool calls, installation conflicts and Markdown links.
 
-Optional dependencies missing from an environment cause the related tests to skip. Report skips rather than claiming full coverage. CI includes Windows/Linux Python 3.11/3.12 core/camera/MCP jobs and an IFC job on Linux. A workflow file is not evidence that a run passed; inspect the actual run.
+Install the optional dependencies for the modules being tested and include the executed/skipped counts in the report. CI includes Windows/Linux Python 3.11/3.12 core/camera/MCP jobs and an IFC job on Linux. Link the completed run when reporting results.
 
 ## Native 3ds Max / Corona fixture
 
@@ -24,8 +24,8 @@ Read `native-report.json`, decode `fixture.png` and inspect its contents. Check 
 
 ## Native Archicad
 
-Not available on the authoring workstation. Follow the import procedure, record native classifications/dimensions and perform a roundtrip IFC. Add a host/version/translator report before claiming this portion is verified.
+Run the [import procedure](../skills/scene-toolkit/references/archicad.md) in the target Archicad installation. Record native classifications, dimensions and a roundtrip IFC. Include the host version, translator and resulting files in the acceptance report. The [evidence report](verification.md) lists the environments covered by the published runs.
 
 ## Skill routing
 
-`evals/trigger-cases.json` contains positive and negative prompts. Run them in each target agent host and record observed skill choices and resulting artifacts. File/schema validation does not establish model behavior. No automatic multi-model routing evaluation is claimed in this release.
+`evals/trigger-cases.json` contains positive and negative prompts. Run them in each target agent host and record observed skill choices and resulting artifacts. Keep these behavioral results alongside the separate file/schema validation results, with the host and model version recorded.

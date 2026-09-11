@@ -1,5 +1,12 @@
 # Changelog
 
+## Documentation update — 2026-09-11
+
+- Reworked English and Russian introductions around practical use cases and quick installation.
+- Added a guide distinguishing executable tools, authoring workflows and platform design.
+- Consolidated compatibility and recorded test coverage into the technical guides.
+- Linked the successful Windows/Linux GitHub Actions run.
+
 ## 0.1.0 — 2026-09-11
 
 - Initial public toolkit: 20 shared Codex/Claude skills and 17 working references.
@@ -7,4 +14,4 @@
 - Local CLI: plan validation/calibration, IFC4 export, camera fit/transfer, Corona script generation and asset checks/packaging.
 - Six-tool optional stdio MCP server; no image uploads or automatic native rendering.
 - Original courtyard and camera fixtures, regression tests and CI.
-- Native compatibility evidence and known limits documented separately.
+- Native compatibility evidence and workflow requirements documented separately.

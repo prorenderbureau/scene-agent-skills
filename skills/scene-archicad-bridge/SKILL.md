@@ -19,7 +19,7 @@ Complete a verifiable IFC-to-Archicad handoff.
 2. Import/open the IFC with an appropriate IFC translator. Check element type mapping, units, storeys, coordinates, materials and opening geometry before saving a new PLN.
 3. Run the read-only inventory script only when the official archicad Python package and an open host connection are available.
 4. Compare imported wall/door/window counts to the IFC report. An IFC object becoming a Morph is not equivalent to a fully editable native Wall.
-5. Export a roundtrip IFC and compare dimensions/openings. If Archicad is unavailable, deliver IFC plus import steps and state that native import remains unverified.
+5. Export a roundtrip IFC and compare dimensions/openings. When handing off to an Archicad operator, deliver IFC plus import steps and identify the native acceptance steps still to be performed. Report the actual completed steps and their files.
 
 ## Working reference
 

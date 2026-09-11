@@ -16,4 +16,4 @@ Closed architectural solids should not have unexplained boundary edges. Leaves, 
 
 Use scoped selection and derived copies for destructive repairs. Report an object ID/name, view/crop, defect, impact and proposed fix. After repair, repeat the affected check rather than restarting unrelated expensive rendering.
 
-Automatic whole-scene collision solving, watertight certification and arbitrary mesh retopology are not implemented by this release. Use native mesh/section tools or a dedicated geometry checker when those are required, and state the method actually used.
+Use the bundled inventory for mesh counts, open edges and UV coverage. Perform whole-scene collision checks, watertight checks and mesh retopology with native mesh/section tools or a dedicated geometry checker, and record the method and results.

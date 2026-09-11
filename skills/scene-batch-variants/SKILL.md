@@ -17,7 +17,7 @@ Produce comparable alternatives and avoid uncontrolled combinatorial rendering.
 
 1. Define a finite matrix of requested styles, lights and cameras; create stable variant IDs and output paths.
 2. Freeze geometry, camera and random seeds when comparing style/light only. Change one category at a time where possible.
-3. Prepare recipes with the CLI, then use an actual host/image tool to execute. This release does not contain a native render-farm scheduler.
+3. Prepare recipes with the CLI, then use an actual host/image tool to execute. Submit farm jobs through the user's render-farm scheduler when farm execution is required.
 4. Render small previews first, inspect representative results and run final outputs only for intended variants. Save per-variant settings and failures.
 5. Compare the contact sheet, label image-only variants and package successful outputs with a manifest.
 

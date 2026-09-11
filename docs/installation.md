@@ -29,7 +29,7 @@ scene-agent --help
 
 Minimal tools: `python -m pip install -e .`. Extras: `camera` adds NumPy/SciPy; `bim` adds IfcOpenShell 0.8.5; `mcp` adds the supported 1.x MCP SDK line (`<2`). The MCP SDK now has a separate 2.x API; this release deliberately pins its tested v1 interface. Development adds `.[dev]`.
 
-This repository is installed from Git. No PyPI publication of the project itself is claimed. Do not run `pip install scene-agent-skills` expecting an official package unless a future release explicitly provides it.
+Install this project from the Git checkout with `python -m pip install -e ".[camera,bim,mcp]"` as shown above. This is the distribution route for Scene Agent Skills.
 
 ## 2A. Codex project skills
 
@@ -59,7 +59,7 @@ For GitHub marketplace installation, inside Claude Code:
 
 Invoke `/scene-agent-skills:scene-toolkit` or another namespaced skill. The repository includes `.claude-plugin/marketplace.json` and `.claude-plugin/plugin.json`; skills remain at root `skills/`.
 
-Alternatively install project skills with `--agent claude`; use the project's normal skill invocation, without the plugin namespace. Do not install both the plugin and project copies unless duplicate discovery is intended. CLI dependencies must still be installed separately; loading a plugin does not install Python or Corona.
+Alternatively install project skills with `--agent claude`; use the project's normal skill invocation, without the plugin namespace. Choose either the plugin or project-copy route to avoid duplicate discovery. Install the Python CLI dependencies and the native programs required by your workflow separately.
 
 ## 3. Native programs
 

@@ -1,6 +1,6 @@
 # Archicad handoff and verification
 
-Use the official Graphisoft IFC import mechanism with a translator appropriate to the target Archicad version and intended native element mapping. The standard Python connection is not assumed to expose arbitrary wall creation commands. The bundled `archicad_inventory.py` script calls `ACConnection.connect()` and `GetElementsByType` for a read-only count; it does not import IFC or create walls.
+Use the official Graphisoft IFC import mechanism with a translator appropriate to the target Archicad version and intended native element mapping. Import geometry through Archicad's IFC commands. The bundled `archicad_inventory.py` script calls `ACConnection.connect()` and `GetElementsByType` to read element counts from the open project.
 
 ## Import procedure
 
@@ -13,6 +13,6 @@ Use the official Graphisoft IFC import mechanism with a translator appropriate t
 
 ## Python inventory
 
-Install Graphisoft's official `archicad` package in an appropriate environment, start a supported Archicad host and open the test project. Run the bundled [inventory script](../scripts/archicad_inventory.py). A missing host is a clear unavailable state; do not synthesize successful counts. Counts alone do not prove native editability or a correct import.
+Install Graphisoft's official `archicad` package in an appropriate environment, start a supported Archicad host and open the test project. Run the bundled [inventory script](../scripts/archicad_inventory.py). Report the actual connection result and returned counts. Check native editability, dimensions and openings using the procedure above.
 
-This release's native Archicad import and PLN roundtrip have not been tested on the authoring workstation. IFC schema, units and geometry are tested independently. A future native creation adapter can use a documented Archicad C++ add-on command surface; it needs its own versioned contract and regression fixtures rather than invented Python methods.
+IFC schema, units and geometry have independent automated checks. Record the native import and PLN roundtrip in the target Archicad installation; see the [published evidence scope](https://github.com/prorenderbureau/scene-agent-skills/blob/main/docs/verification.md). A native creation adapter can use a documented Archicad C++ add-on command surface, with its own versioned contract and regression fixtures.

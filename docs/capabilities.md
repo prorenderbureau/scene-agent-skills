@@ -1,24 +1,26 @@
-# Capability matrix
+# Tools and workflows
 
-| Capability | Implemented in 0.1.0 | Boundary / evidence |
+Use this guide to choose the right component and prepare its inputs. **Executable tools** perform the operations listed below. **Authoring workflows** guide an agent or operator working in connected software. **Platform design** describes the architecture for a future service.
+
+| Capability | Included component | How to use it |
 |---|---|---|
-| Shared Codex/Claude skills | Yes: 20 SKILL.md files and two plugin manifests | Format validation; model routing needs host evaluation |
-| 16 style recipes | Yes: structured catalogue and cards | Art direction; no built-in image generator |
-| Three modeling levels | Yes: profiles + modeling/audit workflows | No universal automatic retopology |
-| Raw plan tracing / OCR | Agent/manual workflow | No bundled raster detector or OCR service |
-| Plan validation and scale calibration | Executable Python | Schema + local wall/opening bounds; not all scene collisions |
-| Plan-to-IFC4 | Executable Python | Straight walls, rectangular slabs/openings, simplified infills |
-| Plan-to-Max blockout | Executable generator + native smoke | Independent closed cells; not connected production topology |
-| Camera solve | Executable Python | Fixed principal point/no distortion; local initial estimate required |
-| Corona camera transfer | Executable generator | Host transform/FOV and landmark reprojection checks |
-| Corona quality/material/light helpers | Executable MAXScript | Tested host/version in verification report |
-| LightMix setup | Executable MAXScript | Existing AOV preservation and duplicate protection; no automatic rig classification |
-| Mesh topology inventory | Executable MAXScript | Evaluated mesh counts/open edges/UVs, not full collision or manifold certification |
-| Grass/foliage/furniture | Detailed authoring workflows | No bundled asset library or automatic botanical/furniture synthesis |
-| Archicad inventory | Read-only official Python bridge | Requires host; native runtime not tested here |
-| IFC import into Archicad / PLN | Documented workflow | Requires translator and native editability/roundtrip validation |
-| Asset decoding and packaging | Executable Python | Native proprietary dependency discovery/relink is a separate host step |
-| MCP | Six real local stdio tools | Preparation/file operations only; no remote Max/Archicad control |
-| Render-farm scheduler / web app | Design document | Not implemented in this release |
+| Shared Codex/Claude skills | 20 SKILL.md files and two plugin manifests | Install in the host; use the supplied prompts to check skill selection |
+| 16 style recipes | Structured catalogue and art-direction cards | Apply the recipe with a connected image tool or native scene editor |
+| Three modeling levels | Detail profiles and modeling/audit workflows | Model or retopologize in the target application using screen-space targets |
+| Raw plan tracing / OCR | Agent/operator workflow | Use an available tracing or OCR tool and check dimensions before export |
+| Plan validation and scale calibration | Executable Python | Validate the schema, scale and wall/opening bounds; review scene intersections separately |
+| Plan-to-IFC4 | Executable Python | Supply straight walls, rectangular slabs/openings and storeys; receive semantic IFC with simplified infills |
+| Plan-to-Max blockout | Executable generator | Create independent closed wall/slab cells, then refine joins and topology in Max |
+| Camera solve | Executable Python | Supply non-coplanar 3D/2D landmarks and an initial estimate; uses a centered principal point and zero distortion |
+| Corona camera transfer | Executable generator | Apply camera transform/FOV, then compare landmark projections in Max |
+| Corona quality/material/light helpers | Executable MAXScript | Run in 3ds Max with Corona; see the [recorded versions](verification.md) |
+| LightMix setup | Executable MAXScript | Select light groups; preserve existing AOVs and reject duplicate group names |
+| Mesh topology inventory | Executable MAXScript | Inspect evaluated counts, open edges and UVs; use native tools for collision and manifold checks |
+| Grass/foliage/furniture | Detailed authoring workflows | Create or supply project assets, then place, scatter and review them in the scene |
+| Archicad inventory | Read-only official Python bridge | Connect to a running Archicad project and query element counts |
+| IFC import into Archicad / PLN | Native application procedure | Select an IFC translator, import, inspect native types and save/roundtrip the model |
+| Asset decoding and packaging | Executable Python | Stage assets, inspect encoding and create a ZIP; enumerate/relink native scene dependencies in the host |
+| MCP | Six executable local stdio tools | Connect a compatible client for preparation and file operations; execute native work in the target application |
+| Render-farm scheduler / web app | Platform design document | Use the proposed worker and job contracts when developing your own service |
 
-This matrix is intentionally explicit. A workflow can be useful and detailed without being a one-click implementation. Contributions should upgrade a row only when code and reproducible host evidence support the claim.
+See [installation](installation.md) for software requirements, [commands](commands.md) for executable interfaces and [test results](verification.md) for the recorded evidence. Contributions should pair changes with reproducible examples and the relevant host checks.

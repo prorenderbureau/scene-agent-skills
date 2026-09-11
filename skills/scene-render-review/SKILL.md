@@ -11,7 +11,7 @@ Use evidence to choose the next useful iteration.
 
 **Inputs:** Reference, actual render, camera/scene settings and priority regions.
 
-**Result:** Comparison findings, scorecard, correction list and residual limitations.
+**Result:** Comparison findings, scorecard, correction list and remaining acceptance steps.
 
 ## Procedure
 
